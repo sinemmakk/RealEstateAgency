@@ -1,0 +1,40 @@
+navbar{
+border-bottom: #ffab44 2px solid;
+}
+
+.navbar .navbar-brand{
+color: #ffab44 !important;
+font-size:27px;
+}
+
+.bg-dark{
+background-color:rgba(0,0,0, 1) !important;
+}
+
+.nav-link{
+color: white !important;
+text-transform: uppercase;
+transition: color .5s ease;
+}
+
+.nav-link:hover{
+color: #ffab44 !important
+}
+
+#headerSection{
+background: url('../images/au.jpeg') no-repeat center center fixed;
+background-size: cover;
+height: 100vh;
+}
+
+#headerSection .overlay{
+background-color:rgba(0,0,0,.7);
+}
+
+#headerSection .row{
+height:100vh;
+}
+
+#headerSection span {
+ color: #ffab44 !important
+}
