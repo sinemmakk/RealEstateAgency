@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:h="http://xmlns.jcp.org/jsf/html" 
+      xmlns:f = "http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <head>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+      
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/styleuser.css"/>
+      
+      <!-- İkon CSS -->
+      <link rel="stylesheet" href="css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="css/font-awesome.css"/>
+
+    <title>Real Estate Agency</title>
+  </head>
+  <body>
+    
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+          <button class="navbar-toggler" data-toogle="collapse" data-target="#nvbCollapse">
+              <span class="navbar-toggler-icon"></span></button>
+              <a href="#" class="navbar-brand">Real Estate Agency</a>
+        
+          <div class="collapse navbar-collapse" id="nvbCollapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"> 
+                  <a class="nav-link" href="index.xhtml">Home</a>
+                  </li>
+                  <li class="nav-item"> 
+                  <a class="nav-link" href="search.xhtml">Search</a>
+                  </li>
+                  <li class="nav-item"> 
+                  <a class="nav-link" href="houseform.xhtml">Advert House</a>
+                  </li>
+                  <li class="nav-item"> 
+                  <a class="nav-link" href="contact.xhtml">Contact Us</a>
+                  </li>
+                  <li class="nav-item"> 
+                  <a class="nav-link" href="about.xhtml">About Us</a>
+                  </li>
+                  <li class="nav-item"> 
+                  <a class="nav-link" href="user.xhtml">User</a>
+                  </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      
+      
+<header id="headerSection">
+<div class="container">
+<div class="row">
+<div class="col my-auto">
+<div class="login-form">
+<div class="main-div">
+    <div class="panel">
+        <h2 style="color:#ffab44;">UPDATE YOUR PROFILE</h2><br></br>
+   </div>
+    <h:form id="Login">
+        <div class="form-group">
+            <h:outputText value="New Name"/>
+            <h:inputText id="name" class="form-control" value="#{kullaniciBean.girilenAd}"/>
+        </div>
+        <div class="form-group">
+            <h:outputText value="New Surname"/>
+            <h:inputText id="surname" class="form-control" value="#{kullaniciBean.girilenSoyad}"/>
+        </div>
+        <div class="form-group">
+            <h:outputText value="Old Email"/>
+                <h:inputText id="email1" class="form-control" value="#{kullaniciBean.girilenEmail1}">
+    <f:validateRegex pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]"/>
+</h:inputText>
+        </div>
+        <div class="form-group">
+            <h:outputText value="New Email"/>
+                <h:inputText id="email2" class="form-control" value="#{kullaniciBean.girilenEmail2}">
+    <f:validateRegex pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]"/>
+</h:inputText>
+        </div>
+        <div class="form-group">
+            <h:outputText value="Old Password"/>
+            <h:inputSecret id="password1" class="form-control" value="#{kullaniciBean.girilenSifre1}"/>
+        </div>
+        <div class="form-group">
+            <h:outputText value="New Password"/>
+            <h:inputSecret id="password2" class="form-control" value="#{kullaniciBean.girilenSifre2}"/>
+        </div>
+        <h:commandButton type="submit" class="btn btn-primary" value="Update" action="#{kullaniciBean.update()}"/>
+    </h:form>
+    </div>
+</div></div>
+</div></div>
+</header>
+     
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
